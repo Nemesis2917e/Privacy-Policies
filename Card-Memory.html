@@ -1,127 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h2 style="Color:white;">Terms and Conditions/Privacy Policy</h2>
-    </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>Welcome to our Game. By Playing this Game, you agree to comply with these Terms and Conditions.</p>
-        </section>
-        <section>
-            <h2>Game Terms</h2>
-            <p>This Game is created for entertainment purposes and is not affiliated with any governmental or corporate entity.<br><br>
-
-            All graphics, sounds, and assets used in this Game are either owned by us, licensed, or fall under fair use. Unauthorized use of these assets is prohibited.<br><br> 
-
-            The Game does not require sensitive personal data, and no private information is collected or shared.</p>
-        </section>
-        <section>
-            <h2>Privacy Policy</h2>
-            <p>This Game uses Google AdMob to display ads. AdMob may collect data such as device information, IP addresses, and advertising IDs to serve personalized or non-personalized ads.</p>
-
-            <p>We do not collect, store, or share any personal information through this Game. All data processing related to ads is handled by Google AdMob in compliance with their privacy policies.</p>
-
-            <p>For more details on how AdMob processes data, please visit <a href="https://policies.google.com/privacy">Google's Privacy Policy.</a></p>
-
-               </section>
-        <section>
-            <h2>Use of the Game</h2>
-            <p>You may use our Game only for lawful purposes and in a manner that does not infringe the rights of others.</p>
-        </section>
-        <section>
-            <h2>Limitation of Liability</h2>
-            <p>We will not be liable for any loss or damage arising from your use of the Game, including but not limited to technical issues, or third-party advertisements.</p>
-        </section>
-        <section>
-            <h2>Changes to Terms</h2>
-            <p>We may revise these terms at any time. Please check this page regularly for updates.</p>
-        </section>
-
-        <button style="display:none;" class="play-again-btn" onclick="Android.returnToMenu()">Main Menu</button><br><br>
-
-    </main>
-    <footer>
-        <h3>&copy; 2025 ForgeByte Tech</h3>
-    </footer>
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Privacy Policy</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+}
+
+/* Header */
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    padding: 25px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
-h1 {
-    margin: 0;
+header h2 {
+    color: white;
+    font-size: 1.8rem;
 }
 
+/* Main Container */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Sections as Cards */
 section {
+    background: #1e293b;
+    margin-bottom: 20px;
     padding: 20px;
-    margin: 20px;
-    background: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+/* Headings */
 h2 {
-    color: #35424a;
+    color: #60a5fa;
+    margin-bottom: 10px;
 }
 
+/* Text */
+p {
+    color: #cbd5f5;
+    line-height: 1.6;
+}
 
-    .button, .play-again-btn {
-      position: relative;
-      display: inline-block;
-      padding: 15px 30px;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #fff;
-      background: linear-gradient(to bottom, #00bfff, #32cd32);
+/* Links */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.play-again-btn {
+    display: none; /* controlled via Android */
+    margin: 30px auto;
+    display: block;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
     border: none;
-    border-radius: 15px;
-    padding: 15px 40px;
-      border: none;
-      border-radius: 14px;
-      cursor: none;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-            text-align: center;
-      transition: all 0.2s ease;
-      width: 50%;transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease, filter 0.2s ease;
-      margin-bottom: 20px;
-      align-items: center;
-    margin-left: 22%;
-    height: 10%;
-    }
+    cursor: pointer;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    box-shadow: 0 6px 15px rgba(34,197,94,0.4);
+    transition: all 0.25s ease;
+}
 
-    .button:active, .play-again-btn:active {
-       transform: translateY(6px);
-    }
+.play-again-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(34,197,94,0.6);
+}
 
-
-
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
+    padding: 15px;
+    background: #020617;
+    color: #94a3b8;
+    margin-top: 30px;
+    font-size: 0.9rem;
 }
 </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Terms & Conditions / Privacy Policy</h2>
+</header>
+
+<main>
+
+<section>
+    <h2>Introduction</h2>
+    <p>Welcome to our Game. By playing this game, you agree to comply with these Terms and Conditions.</p>
+</section>
+
+<section>
+    <h2>Game Terms</h2>
+    <p>
+        This Game is created for entertainment purposes and is not affiliated with any governmental or corporate entity.<br><br>
+        All graphics, sounds, and assets used in this Game are either owned by us, licensed, or fall under fair use. Unauthorized use is prohibited.<br><br>
+        The Game does not require sensitive personal data, and no private information is collected or shared.
+    </p>
+</section>
+
+<section>
+    <h2>Privacy Policy</h2>
+    <p>
+        This Game uses Google AdMob to display ads. AdMob may collect data such as device information, IP addresses, and advertising IDs to serve personalized or non-personalized ads.
+    </p>
+    <p>
+        We do not collect, store, or share any personal information. All ad-related data processing is handled by Google.
+    </p>
+    <p>
+        Learn more: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+    </p>
+</section>
+
+<section>
+    <h2>Use of the Game</h2>
+    <p>You may use this Game only for lawful purposes and in a way that does not infringe the rights of others.</p>
+</section>
+
+<section>
+    <h2>Limitation of Liability</h2>
+    <p>We are not liable for any loss or damage arising from use of the Game, including technical issues or third-party ads.</p>
+</section>
+
+<section>
+    <h2>Changes to Terms</h2>
+    <p>We may update these terms at any time. Please review this page regularly.</p>
+</section>
+
+<button class="play-again-btn" onclick="Android.returnToMenu()">
+    Main Menu
+</button>
+
+</main>
+
+<footer>
+    © 2026 ForgeByte Tech. All rights reserved.
+</footer>
+
+</body>
+</html>
