@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2 style="Color:white;">Terms and Conditions/Privacy Policy</h2>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to our Game. By Playing this Game, you agree to comply with these Terms and Conditions.</p>
+        </section>
+        <section>
+            <h2>Game Terms</h2>
+            <p>This Game is created for entertainment purposes and is not affiliated with any governmental or corporate entity.<br><br>
+
+            All graphics, sounds, and assets used in this Game are either owned by us, licensed, or fall under fair use. Unauthorized use of these assets is prohibited.<br><br> 
+
+            The Game does not require sensitive personal data, and no private information is collected or shared.</p>
+        </section>
+        <section>
+            <h2>Privacy Policy</h2>
+            <p>This Game uses Google AdMob to display ads. AdMob may collect data such as device information, IP addresses, and advertising IDs to serve personalized or non-personalized ads.</p>
+
+            <p>We do not collect, store, or share any personal information through this Game. All data processing related to ads is handled by Google AdMob in compliance with their privacy policies.</p>
+
+            <p>For more details on how AdMob processes data, please visit <a href="https://policies.google.com/privacy">Google's Privacy Policy.</a></p>
+
+               </section>
+        <section>
+            <h2>Use of the Game</h2>
+            <p>You may use our Game only for lawful purposes and in a manner that does not infringe the rights of others.</p>
+        </section>
+        <section>
+            <h2>Limitation of Liability</h2>
+            <p>We will not be liable for any loss or damage arising from your use of the Game, including but not limited to technical issues, or third-party advertisements.</p>
+        </section>
+        <section>
+            <h2>Changes to Terms</h2>
+            <p>We may revise these terms at any time. Please check this page regularly for updates.</p>
+        </section>
+
+        <button style="display:none;" class="play-again-btn" onclick="Android.returnToMenu()">Main Menu</button><br><br>
+
+    </main>
+    <footer>
+        <h3>&copy; 2025 ForgeByte Tech</h3>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #35424a;
+}
+
+
+    .button, .play-again-btn {
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(to bottom, #00bfff, #32cd32);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 40px;
+      border: none;
+      border-radius: 14px;
+      cursor: none;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+      transition: all 0.2s ease;
+      width: 50%;transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease, filter 0.2s ease;
+      margin-bottom: 20px;
+      align-items: center;
+    margin-left: 22%;
+    height: 10%;
+    }
+
+    .button:active, .play-again-btn:active {
+       transform: translateY(6px);
+    }
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+}
+</style>
