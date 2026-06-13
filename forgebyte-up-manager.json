@@ -2,5 +2,13 @@
   "com.forgebyte.tech.shooter.colors.bubbleshooter": {
     "latest_version": "1.7",
     "update_details": "• New Levels added!\n• Performance improvements.\n• Bug fixes for smoother gameplay."
-  }
+  } ,
+
+"com.forgebyte.tech.gamehub" : {
+
+"lastest_version" : "1.0.1",
+  "update_details" : "New Update Available"
+  
+}
+
 }
