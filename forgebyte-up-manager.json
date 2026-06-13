@@ -4,12 +4,15 @@
     "update_details": "• New Levels added!\n• Performance improvements.\n• Bug fixes for smoother gameplay."
   } ,
   
-"com.forgebyte.tech.gamehub" : {
+  "com.forgebyte.gamehub" : {
 
 "lastest_version" : "1.0.1",
   "update_details" : "New Update Available"
   
+  }
+
 }
+
 
 }
 
