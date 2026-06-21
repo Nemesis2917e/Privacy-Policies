@@ -9,9 +9,11 @@
 "lastest_version" : "1.0.0",
   "update_details" : "New Update Available"
   
+} ,
+  
+  "com.forgebyte.tech.quran.app": {
+    "latest_version": "1.0.3",
+    "update_details": "• Added new Prayer features\n• Improved app performance\n• Fixed minor bugs in the Quran reader"
+  }
+
 }
-
-
-}
-
-
